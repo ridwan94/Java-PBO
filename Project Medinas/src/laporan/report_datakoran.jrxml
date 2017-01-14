@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1f33bb60-62b6-4f50-977f-b09cd1c1a872">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tbl_koran.`no` AS tbl_koran_no,
+     tbl_koran.`nama` AS tbl_koran_nama,
+     tbl_koran.`kota` AS tbl_koran_kota,
+     tbl_koran.`no_hp` AS tbl_koran_no_hp,
+     tbl_koran.`jml_eks` AS tbl_koran_jml_eks,
+     tbl_koran.`wajib_bayar` AS tbl_koran_wajib_bayar,
+     tbl_koran.`biaya_kirim` AS tbl_koran_biaya_kirim,
+     tbl_koran.`iklan` AS tbl_koran_iklan,
+     tbl_koran.`telah_bayar` AS tbl_koran_telah_bayar,
+     tbl_koran.`keterangan` AS tbl_koran_keterangan
+FROM
+     `tbl_koran` tbl_koran]]>
+	</queryString>
+	<field name="tbl_koran_no" class="java.lang.Integer"/>
+	<field name="tbl_koran_nama" class="java.lang.String"/>
+	<field name="tbl_koran_kota" class="java.lang.String"/>
+	<field name="tbl_koran_no_hp" class="java.lang.String"/>
+	<field name="tbl_koran_jml_eks" class="java.lang.Integer"/>
+	<field name="tbl_koran_wajib_bayar" class="java.lang.Integer"/>
+	<field name="tbl_koran_biaya_kirim" class="java.lang.Integer"/>
+	<field name="tbl_koran_iklan" class="java.lang.Integer"/>
+	<field name="tbl_koran_telah_bayar" class="java.lang.Integer"/>
+	<field name="tbl_koran_keterangan" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="348" height="101" uuid="f517927f-e943-4d27-a5a6-f6f9b5c8e300"/>
+				<imageExpression><![CDATA["C:\\Users\\Aji\\Documents\\NetBeansProjects\\Medinas\\src\\gambar\\Medinas.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="455" y="3" width="98" height="20" uuid="ec543a36-6ea5-48a3-acbe-31f48b371ee3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="24" width="21" height="20" uuid="dd62b0ed-82c8-4b40-a39a-309526febf86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="24" width="65" height="20" uuid="88e3b0b4-6725-4858-8b9e-30681f81a4bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="87" y="24" width="62" height="20" uuid="f0bb3caf-afc1-4233-bc61-3ef1bb8217c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kota/Kab.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="24" width="58" height="20" uuid="89fe9a0b-4e7c-42d1-8507-7d0e22b922cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. HP]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="18" width="554" height="1" uuid="7b9fc3ea-a5b6-4a6a-b256-ced57b889426"/>
+				<graphicElement>
+					<pen lineWidth="3.25" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="49" width="554" height="1" uuid="3a184f1d-f784-43da-8f13-c4d8c9fa1b42"/>
+				<graphicElement>
+					<pen lineWidth="2.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="209" y="24" width="57" height="20" uuid="c15693fa-cf01-4473-acec-2d08628ff847"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jumlah Eks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="24" width="56" height="20" uuid="74ceb038-63d8-4a47-af46-195d2dbb8bd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Wajib Bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="24" width="55" height="20" uuid="19ca7ffd-0c56-4d13-9d39-add5a80ba875"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Biaya Kirim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="24" width="56" height="20" uuid="4db1b1a6-aabd-4eb5-9ebb-cb6a24865691"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Iklan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="24" width="60" height="20" uuid="cfab6761-2cf6-472a-93e5-60902cba63b6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telah Bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="498" y="24" width="57" height="20" uuid="40b1996b-eccf-4936-b31c-7eaec1f72e94"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="21" height="20" uuid="8394243e-6632-42ab-8d05-b35b9cc06269"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="0" width="65" height="20" uuid="856d08c8-1264-466d-a0f5-fe975781219d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="0" width="63" height="20" uuid="c52a9d2e-86fd-4dcc-a898-b163ac03025a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_kota}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="0" width="58" height="20" uuid="2bea2d19-0fda-42aa-bce9-7d61259377e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_no_hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="57" height="20" uuid="9563e373-1551-476f-90c2-9365f2ebb231"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_jml_eks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="269" y="0" width="56" height="20" uuid="0e134bad-8c84-464d-bd88-befc08b08674"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_wajib_bayar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="0" width="55" height="20" uuid="a0b2c04a-0784-48f3-8fdd-84a0f88d8044"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_biaya_kirim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="383" y="0" width="56" height="20" uuid="ff434119-8036-453d-ae6e-70b309232420"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_iklan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="439" y="0" width="59" height="20" uuid="01dec9c1-ffe5-4ce7-bf0e-fde790435734"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_telah_bayar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="55" height="20" uuid="16991d43-454d-418a-b15b-82e2341ad81a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbl_koran_keterangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="31" width="554" height="1" uuid="5190711d-335d-413b-a181-4fc877b9f606"/>
+				<graphicElement>
+					<pen lineWidth="2.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="420" y="32" width="80" height="20" uuid="c6f40cb5-8831-4731-9b25-7eef42d90e87"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="500" y="32" width="40" height="20" uuid="512cf9bc-2abd-4f87-adf5-8343c5ac375f"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
